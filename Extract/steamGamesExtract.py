@@ -1,9 +1,13 @@
 import requests
-url="https://ipinfo.io/190.60.194.144/json"
-try:
-    response = requests.get(url)
-    data = requests.json()
-    print(data)
+import pandas as pd
+import numpy as np
 
-except:
-    print("hubo un error")
+class steamGamesExtractor:
+    def __init__(Self, csv_path):
+        self.csv = csv_path
+
+def queries():
+    data = pd.read_csv(Self.csv)
+
+def response():
+    return data.head(5)
